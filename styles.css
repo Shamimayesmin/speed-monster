@@ -121,6 +121,7 @@ body {
 .title2 {
   color: white;
   display: block;
+  
 }
 
 .buttons {
@@ -143,9 +144,14 @@ button {
 }
 
 #histories {
-  display: flex;
+  display: grid;
+  /* grid-template-columns: 300px 2fr 2fr; */
+  gap :40px;
+  
+ 
   flex-wrap: wrap;
   justify-content: space-around;
+  
 }
 
 .card {
@@ -153,6 +159,9 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
+
+  flex-wrap: wrap;
+
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -191,3 +200,14 @@ button {
     flex-direction: column;
   }
 }
+
+ @media screen and (min-width: 992px) {
+    /* For Large Laptops  */
+      .box-container {
+          width: 962px;
+      }
+      #histories{
+         
+         grid-template-columns: 300px 2fr 2fr;
+      }
+  }
