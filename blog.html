@@ -17,40 +17,75 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
+                    What is the difference between local storage and session storage?
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>1.</strong> The storage capacity of local storage is 5MB/10MB.   And the storage capacity of session storage is 5MB
+                </div>
+                <div class="accordion-body">
+                  <strong>2.</strong> As local storage is not session-based, it must be deleted via javascript or manually.	Session storage is session-based and works per window or tab. This means that data is stored only for the duration of a session, until the browser (or tab) is closed
+                </div>
+                <div class="accordion-body">
+                  <strong>3.</strong> The client  can only read local storage.On the other hand, the server can only read session storage
+                </div>
+                <div class="accordion-body">
+                  <strong>4.</strong>In local storage there is no transfer of data to the server. In session storage there is no transfer of data to the server
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <!-- <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
+                    What is the difference between global scope and block scope?
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>Global Scope :</strong> Variables defined outside any function, block, or module scope have global scope. Variables in global scope can be accessed from everywhere in the application.
+
+                  When a module system is enabled it’s harder to make global variables, but one can still do it. By defining a variable in HTML, outside any function, a global variable can be created:
+                </div>
+                <div class="accordion-body">
+                  <strong>Block Scope :</strong>Block scope is defined with curly braces. It is separated by { and }.
+
+                  Variables declared with let and const can have block scope. They can only be accessed in the block in which they are defined.
+                  Consider the next code that emphasizes let block scope:
+
+                        let x = 1;
+                        { 
+                        let x = 2;
+                        }
+                        console.log(x); //1
                 </div>
               </div>
-            </div>
+            </div> -->
+            
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                    What is an event loop in javascript?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    JavaScript is a single-threaded synchronous programming language,
+                    an event loop is a programming construct that allows a program to handle multiple events or tasks simultaneously. It works by having the program keep track of all the events or tasks that need to be processed, and then processing them one by one as they come in. This can be a very efficient way to handle a lot of events or tasks, as it prevents the program from getting bogged down by having to process everything at once.
                 </div>
-              </div>
             </div>
-          </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What is undefined ?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    In JavaScript, "undefined" is a global variable (a property of the global object), that is created at run time. Undefined means a variable has been declared, but the value of that variable has not yet been defined . Also, when you do not supply an argument for a function parameter, it will have the value of "undefined" . Furthermore, when a function does not return a value, it returns "undefined". It is one of JavaScript's primitive types .
+                </div>
+            </div>
+        </div>
     </section>
   </main>
     
