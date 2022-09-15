@@ -145,10 +145,9 @@ button {
 
 #histories {
   display: grid;
-  /* grid-template-columns: 300px 2fr 2fr; */
+  
   gap :40px;
   
- 
   flex-wrap: wrap;
   justify-content: space-around;
   
